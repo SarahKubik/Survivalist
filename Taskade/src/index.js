@@ -4,15 +4,32 @@ const dotenv = require("dotenv");
 dotenv.config();
 const { DB_URI, DB_NAME } = process.env;
 
+const books = [
+  {
+    title: "The Awakening",
+    author: "Kate Chopin",
+  },
+  {
+    title: "City of Glass",
+    author: "Paul Auster",
+  },
+];
+
 const typeDefs = gql`
-    type User {
-        id: ID!
-    }
+  type Query {
+    books: [Book]
+  }
+
+  type Book {
+    title: String
+    author: String
+  }
 `;
 
 const resolvers = {
-
-};
+  Query: {
+    books: () => books,
+  },
 
 const start = async () => {
   const client = new MongoClient(DB_URI, {
