@@ -1,34 +1,91 @@
 const { ApolloServer, gql } = require("apollo-server");
 const { MongoClient } = require("mongodb");
 const dotenv = require("dotenv");
+const bcrypt = require("bcryptjs");
 dotenv.config();
-const { DB_URI, DB_NAME } = process.env;
 
-const books = [
-  {
-    title: "The Awakening",
-    author: "Kate Chopin",
-  },
-  {
-    title: "City of Glass",
-    author: "Paul Auster",
-  },
-];
+const { DB_URI, DB_NAME } = process.env;
 
 const typeDefs = gql`
   type Query {
-    books: [Book]
+    myTaskLists: [TaskList!]!
   }
 
-  type Book {
-    title: String
-    author: String
+  type Mutation {
+    signUp(input: SignUpInput): AuthUser!
+    signIn(input: SignInInput): AuthUser!
+  }
+
+  input SignUpInput {
+    email: String!
+    password: String!
+    name: String!
+    avatar: String
+  }
+
+  input SignInInput {
+    email: String!
+    password: String!
+  }
+
+  type AuthUser {
+    user: User!
+    token: String!
+  }
+
+  type User {
+    id: ID!
+    name: String!
+    email: String!
+    avatar: String
+  }
+
+  type TaskList {
+    id: ID!
+    createdAt: String!
+    title: String!
+    progress: Float!
+
+    users: [User!]!
+    todos: [ToDo!]!
+  }
+
+  type ToDo {
+    id: ID!
+    content: String!
+    isCompleted: Boolean!
+
+    taskList: TaskList!
   }
 `;
 
 const resolvers = {
   Query: {
-    books: () => books,
+    myTaskLists: () => [],
+  },
+  Mutation: {
+    signUp: async (_, { input }, { db }) => {
+      const hashedPassword = bcrypt.hashSync(input.password);
+      const newUser = {
+        ...input,
+        password: hashedPassword,
+      };
+      // save to database
+      const result = await db.collection("Users").insert(newUser);
+      const user = result.ops[0];
+      return {
+        user,
+        token: "token",
+      };
+    },
+
+    signIn: () => {},
+  },
+  User: {
+    id: (root) => {
+      console.log(root);
+      return "hello";
+    },
   },
 };
 
