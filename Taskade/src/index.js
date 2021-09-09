@@ -30,6 +30,7 @@ const resolvers = {
   Query: {
     books: () => books,
   },
+};
 
 const start = async () => {
   const client = new MongoClient(DB_URI, {
