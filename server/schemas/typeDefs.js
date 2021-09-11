@@ -1,54 +1,29 @@
-const { gql } = require('apollo-server-express');
+const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
-  type Category {
-    _id: ID
-    name: String
-  }
-
-  type Product {
-    _id: ID
-    name: String
-    description: String
-    image: String
-    quantity: Int
-    price: Float
-    category: Category
-  }
-
-    type User {
-    _id: ID
-    firstName: String
-    lastName: String
-    email: String
-    orders: [Order]
-  }
-
-  type Checkout {
-    session: ID
-  }
-
-  type Auth {
-    token: ID
-    user: User
-  }
-
   type Query {
-    categories: [Category]
-    products(category: ID, name: String): [Product]
-    product(_id: ID!): Product
-    user: User
-    
-  }
-
-  type Mutation {
-    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
-   
-    updateUser(firstName: String, lastName: String, email: String, password: String): User
-    updateProduct(_id: ID!, quantity: Int!): Product
-    login(email: String!, password: String!): Auth
+    "A simple type for getting started!"
+    hello: String
   }
 `;
+// type Query {
+//   user: User
+//   }
+
+//   type User {
+//     _id: ID
+//     name: String
+//     email: String
+
+//   type Auth {
+//   token: ID
+//   user: User
+//   }
+
+//    type Mutation {
+//     addUser(lastName: String!, email: String!, password: String!): Auth
+//     login(email: String!, password: String!): Auth
+//   }
 
 /*type Order {
     _id: ID
@@ -57,11 +32,62 @@ const typeDefs = gql`
   }
   */
 
- // Took next 2 lines from type Query {}
- //   order(_id: ID!): Order
- // checkout(products: [ID]!): Checkout
+// Took next 2 lines from type Query {}
+//   order(_id: ID!): Order
+// checkout(products: [ID]!): Checkout
 
- // Took this from type Mutation {}
- //  addOrder(products: [ID]!): Order
+// Took this from type Mutation {}
+//  addOrder(products: [ID]!): Order
+//  type Category {
+//   _id: ID
+//   name: String
+// }
+
+// type Product {
+//   _id: ID
+//   name: String
+//   description: String
+//   image: String
+//   quantity: Int
+//   price: Float
+//   category: Category
+// }
+
+// type Checkout {
+//   session: ID
+// }
+
+// updateUser(
+//   firstName: String
+//   lastName: String
+//   email: String
+//   password: String
+// ): User
+// updateProduct(_id: ID!, quantity: Int!): Product
+// login(email: String!, password: String!): Auth
+// }
+// type User {
+//   _id: ID
+//   firstName: String
+//   lastName: String
+//   email: String
+// }
+
+// type Auth {
+//   token: ID
+//   user: User
+// }
+// type Query {
+//   numberSix: Int! # Should always return the number 6 when queried
+//   numberSeven: Int! # Should always return 7
+// }
+
+// type Mutation {
+//   addUser(
+//     firstName: String!
+//     lastName: String!
+//     email: String!
+//     password: String!
+//   ): Auth
 
 module.exports = typeDefs;
