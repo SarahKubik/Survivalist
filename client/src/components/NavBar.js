@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Form, FormControl} from "react-bootstrap";
 
 import {
   Collapse,
@@ -40,6 +41,7 @@ const NavBar = () => {
     <div className="nav-container">
       <Navbar color="light" light expand="md">
         <Container>
+          <h1>Survivalist</h1>
           <NavbarBrand className="logo" />
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
@@ -66,7 +68,26 @@ const NavBar = () => {
                   </NavLink>
                 </NavItem>
               )}
+              {isAuthenticated && (
+                <NavItem>
+                  <NavLink
+                    tag={RouterNavLink}
+                    to="/wishlist"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    Wishlist
+                  </NavLink>
+                </NavItem>
+              )}
             </Nav>
+            {isAuthenticated && (
+            <Form inline>
+            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+            <Button variant="outline-success">Search</Button>
+            </Form>
+            )}
+
             <Nav className="d-none d-md-block" navbar>
               {!isAuthenticated && (
                 <NavItem>

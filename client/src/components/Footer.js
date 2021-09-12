@@ -3,9 +3,11 @@ import React from "react";
 const Footer = () => (
   <footer className="bg-light p-3 text-center">
     <div className="logo" />
+
     <p>
       Website brought to you by Adam Andrzejczak, Caden Witbeck, Drew Seldon, Lauren Marcinek, and Sarah Kubik.
     </p>
+
   </footer>
 );
 
