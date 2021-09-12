@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="logo" />
 
     <p>
-      Website brought to you by Adam Andrzejczak, Caden Witbeck, Drew Seldon, Lauren Marcinek, and Sarah Kubik.
+      Website brought to you by Adam Andrzejczak, Caden Witbeck, Drew Selden, Lauren Marcinek, and Sarah Kubik.
     </p>
 
   </footer>
