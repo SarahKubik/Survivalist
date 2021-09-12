@@ -67,11 +67,26 @@ const NavBar = () => {
                   </NavLink>
                 </NavItem>
               )}
+              {isAuthenticated && (
+                <NavItem>
+                  <NavLink
+                    tag={RouterNavLink}
+                    to="/wishlist"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    Wishlist
+                  </NavLink>
+                </NavItem>
+              )}
             </Nav>
+            {isAuthenticated && (
             <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
             <Button variant="outline-success">Search</Button>
             </Form>
+            )}
+
             <Nav className="d-none d-md-block" navbar>
               {!isAuthenticated && (
                 <NavItem>
