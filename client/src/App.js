@@ -10,7 +10,7 @@ import Profile from "./views/Profile";
 import Wishlist from "./views/Wishlist";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 // styles
 import "./App.css";
