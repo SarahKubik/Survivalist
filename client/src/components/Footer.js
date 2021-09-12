@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="logo" />
 
     <p>
-      Website brought to you by Adam Andrzejczak, Caden Witbeck, Drew Selden, Lauren Marcinek, and Sarah Kubik.
+      Website brought to you by <a href= "https://github.com/andadam24">Adam Andrzejczak</a> , <a href="https://github.com/CadenWit">Caden Witbeck</a>,<a href="https://github.com/selden-CBC2021"> Drew Selden </a>, <a href="https://github.com/lc-mar"> Lauren Marcinek</a>, <a href="https://github.com/SarahKubik"> Sarah Kubik </a>, and <a href="https://github.com/Codyschenk"> Cody Schenk</a>
     </p>
 
   </footer>
