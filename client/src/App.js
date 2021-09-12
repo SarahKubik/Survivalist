@@ -10,6 +10,7 @@ import Profile from "./views/Profile";
 import ExternalApi from "./views/ExternalApi";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // styles
 import "./App.css";
