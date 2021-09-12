@@ -36,6 +36,7 @@ const NavBar = () => {
       returnTo: window.location.origin,
     });
 
+    // LOGO --> <NavbarBrand className="logo" /> see below // 
   return (
     <div className="nav-container">
       <Navbar color="light" light expand="md">
