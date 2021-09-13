@@ -5,7 +5,12 @@ const { signToken } = require("../utils/auth");
 const resolvers = {
   Query: {
     user: async (parent, args, context) => {
-      return await User.findById(context.user._id).populate("Wishlist");
+      return await User.findById(context.user._id)
+        .populate("wishlist")
+        .populate({
+          path: "wishlist",
+          populate: "item",
+        });
     },
   },
   Mutation: {
@@ -31,6 +36,10 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
+    },
+    addItem: async (parent, args) => {
+      const item = await Item.create(args);
+      return item;
     },
   },
 };
