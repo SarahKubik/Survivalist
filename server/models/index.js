@@ -1,7 +1,5 @@
 const User = require("./User");
-// const Product = require('./Product');
-// const Category = require('./Category');
-// const Order = require('./Order');
+const Item = require("./Item");
+const Wishlist = require("./Wishlist");
 
-// Addd Order to the exports list once we figure it out
-module.exports = { User };
+module.exports = { User, Item, Wishlist };
