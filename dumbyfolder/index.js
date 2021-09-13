@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server-express");
+const { ApolloServer, gql } = require("apollo-server");
 
 const users = [
   {
@@ -39,17 +39,17 @@ const typeDefs = gql`
   }
 `;
 
-module.exports = typeDefs;
+const resolvers = {
+  Query: {
+    users: () => users,
+    items: () => items,
+  },
+};
 
-// type User {
-//   _id: ID!
-//   name: name!
-//   email: email
-// }
+// The ApolloServer constructor requires two parameters: your schema
+// definition and your set of resolvers.
+const server = new ApolloServer({ typeDefs, resolvers });
 
-// type Item {
-//   image: String!
-//   name: String!
-//   price: Float!
-//   description: String!
-// }
+server.listen().then(({ url }) => {
+  console.log(`🚀  Server ready at ${url}`);
+});

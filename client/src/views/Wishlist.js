@@ -113,9 +113,9 @@ export const ExternalApiComponent = () => {
           </Alert>
         )}
 
-        <h1>External API</h1>
+        <h1>Wishlist</h1>
         <p className="lead">
-          Ping an external API by clicking the button below.
+          Below are some items that you saved to view later.
         </p>
 
         <p>

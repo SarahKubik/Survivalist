@@ -1,27 +1,27 @@
 const contentData = [
   {
-    title: "Configure other identity providers",
+    title: "Hammer",
     link: "https://auth0.com/docs/connections",
     description:
-      "Auth0 supports social providers as Facebook, Twitter, Instagram and 100+, Enterprise providers as Microsoft Office 365, Google Apps, Azure, and more. You can also use any OAuth2 Authorization Server."
+      "This hammer is good! You can use it to nail items or even as a defensive weapon"
   },
   {
-    title: "Enable Multifactor Authentication",
+    title: "Water",
     link: "https://auth0.com/docs/multifactor-authentication",
     description:
-      "Add an extra layer of security by enabling Multi-factor Authentication, requiring your users to provide more than one piece of identifying information. Push notifications, authenticator apps, SMS, and DUO Security are supported."
+      "Water is important to staying alive. Having safe drinking water can be used to keep you hydrated, used to cook food, and cleaning items."
   },
   {
-    title: "Anomaly Detection",
+    title: "Shelter",
     link: "https://auth0.com/docs/anomaly-detection",
     description:
-      "Auth0 can detect anomalies and stop malicious attempts to access your application. Anomaly detection can alert you and your users of suspicious activity, as well as block further login attempts."
+      "Shelter is crucial to survivalism. You need proper shelter in order to keep yourself same from unknowns. "
   },
   {
-    title: "Learn About Rules",
+    title: "Rope",
     link: "https://auth0.com/docs/rules",
     description:
-      "Rules are JavaScript functions that execute when a user authenticates to your application. They run once the authentication process is complete, and you can use them to customize and extend Auth0's capabilities."
+      "Rope can be a good item to have to help store items and build."
   }
 ];
 
