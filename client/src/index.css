@@ -12,3 +12,10 @@ code {
   font-family: "source-code-pro", "Menlo", "Monaco", "Consolas", "Courier New",
     "monospace";
 }
+
+.lead{
+  color: rgb(0, 0, 0);
+  text-shadow: rgb(255, 255, 255) 0px 0px 1px;
+  -webkit-font-smoothing: antialiased;
+
+}
