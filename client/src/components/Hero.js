@@ -9,11 +9,11 @@ const Hero = () => (
     
       <h1 className="mb-4">Mission Statement:</h1>
 
+
       <h2 className="lead display-4">
         'To help humanity be fully prepared'
       </h2>
     </div>
-  </div>
 );
 
 export default Hero;
