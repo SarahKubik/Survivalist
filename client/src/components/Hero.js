@@ -8,7 +8,7 @@ const Hero = () => (
     <h1 className="mb-4">Mission Statement:</h1>
 
     <p className="lead">
-      "To help humanity be fully prepared"
+      "Survivor? I barely know her"
     </p>
   </div>
 );
