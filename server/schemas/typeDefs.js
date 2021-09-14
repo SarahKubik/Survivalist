@@ -5,6 +5,7 @@ const typeDefs = gql`
     _id: ID
     name: String!
     email: String!
+    wishlist: [Item]
   }
   type AuthUser {
     token: ID
@@ -21,11 +22,14 @@ const typeDefs = gql`
   type Query {
     user: User
     item(name: NAME!): Item
+    search(name: String!): [Item]
   }
+
   type Mutation {
     addItem(input: Item!): Item
     addUser(input: SignUpInput!): AuthUser
     login(input: SignInInput!): AuthUser
+    addWishlist(input: [Item]): User
   }
 
   input SignInInput {
