@@ -20,6 +20,7 @@ const typeDefs = gql`
 
   type Query {
     user: User
+    item(name: NAME!): Item
   }
   type Mutation {
     addItem(input: Item!): Item
