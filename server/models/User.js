@@ -19,6 +19,12 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  wishlist: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Item",
+    },
+  ],
 });
 
 // set up pre-save middleware to create password
