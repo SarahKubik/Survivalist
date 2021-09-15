@@ -7,9 +7,16 @@ const resolvers = {
     user: async (parent, args, context) => {
       return await User.findById(context.user._id).populate("wishlist");
     },
+    users: async (parent, args, context) => {
+      return await User.find({}).populate("wishlist");
+    },
     // query item still needs to be finished
     item: async (parent, args, context) => {
-      const item = Item.findById(context.item._id);
+      const item = await Item.findById(context.item._id)
+      return item;
+    },
+    items: async (parent, args, context) => {
+      return await Item.find({})
     },
     search: async (parent, args) => {
       const items = await Item.find({
