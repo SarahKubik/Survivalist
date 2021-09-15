@@ -60,5 +60,22 @@ const resolvers = {
     },
   },
 };
+// updateClass: async (parent, { id, building }) => {
+//   // Find and update the matching class using the destructured args
+//   return await Class.findOneAndUpdate(
+//     { _id: id }, 
+//     { building },
+//     // Return the newly updated object instead of the original
+//     { new: true }
+//   );
+// }
+
+// addClass: async (parent, { school, name, building, creditHours, professor }) => {
+//   const { _id } = await Class.create({ name, building, creditHours, professor });
+//   return await School.findOneAndUpdate({ _id: school }, { $push: { classes: _id } }, { new: true }).populate("classes").populate({
+//     path: 'classes',
+//     populate: 'professor'
+//   });
+// },
 
 module.exports = resolvers;
