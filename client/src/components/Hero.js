@@ -11,7 +11,7 @@ const Hero = () => (
 
 
       <h2 className="lead display-4">
-        'To help humanity be fully prepared'
+        Survivor? I barely know her!
       </h2>
     </div>
   </div>
