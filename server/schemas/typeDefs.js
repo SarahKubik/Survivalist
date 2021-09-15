@@ -20,9 +20,12 @@ const typeDefs = gql`
   }
 
   type Query {
-    user: User
+    user(id: ID!): User
     item(name: String!): Item
     search(name: String!): [Item]
+    users: [User]
+    items: [Item]
+   
   }
 
   type Mutation {
@@ -38,7 +41,7 @@ const typeDefs = gql`
   }
 
   input SignUpInput {
-    username: String!
+    name: String!
     email: String!
     password: String!
   }
