@@ -3,15 +3,13 @@ const { User } = require("../models");
 
 db.once("open", async () => {
   await User.create({
-    firstName: "Pamela",
-    lastName: "Washington",
+    Name: "Pamela",
     email: "pamela@testmail.com",
     password: "password12345",
   });
 
   await User.create({
-    firstName: "Elijah",
-    lastName: "Holt",
+    Name: "Holt",
     email: "eholt@testmail.com",
     password: "password12345",
   });
