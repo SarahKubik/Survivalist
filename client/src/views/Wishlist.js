@@ -117,7 +117,7 @@ export const ExternalApiComponent = () => {
         <p className="lead">
           Below are some items that you saved to view later.
         </p>
-       
+
       </div>
     </>
   );

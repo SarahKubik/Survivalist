@@ -26,7 +26,7 @@ const contentData = [
   },
   {
     title: "Rope",
-    image: '.assets/shelter.svg'
+    image: '.assets/shelter.svg',
     link: "https://en.wikipedia.org/wiki/Rope",
     description:
       "Rope can be a good item to have to help store items and build.",
