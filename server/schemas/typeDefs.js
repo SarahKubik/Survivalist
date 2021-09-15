@@ -21,15 +21,15 @@ const typeDefs = gql`
 
   type Query {
     user: User
-    item(name: NAME!): Item
+    item(name: String!): Item
     search(name: String!): [Item]
   }
 
   type Mutation {
-    addItem(input: Item!): Item
+    addItem(name: String!, description: String!, image: String!, price: Float!): Item
     addUser(input: SignUpInput!): AuthUser
     login(input: SignInInput!): AuthUser
-    addWishlist(input: [Item]): User
+    addWishlist(name: String!, description: String!, image: String!, price: Float!): User
   }
 
   input SignInInput {

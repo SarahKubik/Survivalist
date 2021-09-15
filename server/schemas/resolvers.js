@@ -48,8 +48,8 @@ const resolvers = {
     },
     // might not work uahaha
     addWishlist: async (parent, { wishlist }) => {
-      const wishlist = await User.findOne({ wishlist }).insert(Item);
-      return wishlist;
+      const wishList = await User.findOne({ wishlist }).insert(Item);
+      return wishList;
     },
   },
 };
