@@ -22,17 +22,30 @@ const typeDefs = gql`
   type Query {
     user(id: ID!): User
     item(name: String!): Item
-    search(name: String!): [Item]
-    users: [User]
-    items: [Item]
-   
+    itemSearch(name: String!): [Item]
+    # users: [User]
+    # items: [Item]
   }
 
   type Mutation {
-    addItem(name: String!, description: String!, image: String!, price: Float!): Item
     addUser(input: SignUpInput!): AuthUser
     login(input: SignInInput!): AuthUser
-    addWishlist(name: String!, description: String!, image: String!, price: Float!): User
+    addItem(input: addItemInput!): Item
+    updateWishlist(input: updateWishlistInput): User
+  }
+
+  input updateWishlistInput {
+    name: String!
+    description: String!
+    image: String!
+    price: Float!
+  }
+
+  input addItemInput {
+    name: String!
+    description: String!
+    image: String!
+    price: Float!
   }
 
   input SignInInput {

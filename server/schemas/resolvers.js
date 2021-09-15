@@ -7,18 +7,18 @@ const resolvers = {
     user: async (parent, args, context) => {
       return await User.findById(context.user._id).populate("wishlist");
     },
-    users: async (parent, args, context) => {
-      return await User.find({}).populate("wishlist");
-    },
+    // users: async (parent, args, context) => {
+    //   return await User.find({}).populate("wishlist");
+    // },
     // query item still needs to be finished
     item: async (parent, args, context) => {
-      const item = await Item.findById(context.item._id)
+      const item = await Item.findById(context.item._id);
       return item;
     },
-    items: async (parent, args, context) => {
-      return await Item.find({})
-    },
-    search: async (parent, args) => {
+    // items: async (parent, args, context) => {
+    //   return await Item.find({});
+    // },
+    itemSearch: async (parent, args) => {
       const items = await Item.find({
         name: { $regex: ".*" + args.name + ".*" },
       });
@@ -53,8 +53,7 @@ const resolvers = {
       const item = await Item.create(args);
       return item;
     },
-    // might not work uahaha
-    addWishlist: async (parent, { wishlist }) => {
+    updateWishlist: async (parent, { wishlist }) => {
       const wishList = await User.findOne({ wishlist }).insert(Item);
       return wishList;
     },
@@ -63,7 +62,7 @@ const resolvers = {
 // updateClass: async (parent, { id, building }) => {
 //   // Find and update the matching class using the destructured args
 //   return await Class.findOneAndUpdate(
-//     { _id: id }, 
+//     { _id: id },
 //     { building },
 //     // Return the newly updated object instead of the original
 //     { new: true }
