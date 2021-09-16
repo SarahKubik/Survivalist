@@ -57,7 +57,7 @@ const resolvers = {
       if (context.user) {
         const wishList = await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $push: { wishList: id } },
+          { $push: { wishlist: id } },
           { new: true }
         ).populate("wishlist");
         return wishList;

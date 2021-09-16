@@ -13,6 +13,7 @@ const typeDefs = gql`
   }
 
   type Item {
+    _id: ID
     name: String!
     description: String!
     image: String!
@@ -31,7 +32,7 @@ const typeDefs = gql`
     addUser(input: SignUpInput!): AuthUser
     login(input: SignInInput!): AuthUser
     addItem(input: addItemInput!): Item
-    updateWishlist(input: updateWishlistInput!): User
+    updateWishlist(id: ID!): User
   }
 
   input updateWishlistInput {
