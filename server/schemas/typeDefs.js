@@ -31,7 +31,7 @@ const typeDefs = gql`
     addUser(input: SignUpInput!): AuthUser
     login(input: SignInInput!): AuthUser
     addItem(input: addItemInput!): Item
-    updateWishlist(input: updateWishlistInput): User
+    updateWishlist(input: updateWishlistInput!): User
   }
 
   input updateWishlistInput {
