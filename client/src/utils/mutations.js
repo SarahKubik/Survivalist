@@ -19,9 +19,12 @@ export const ADD_USER = gql`
         }
     }
 `;
+
+// there is more too this one too i believe, we have to return a user with this item in its wishlist - or this is for just adding items on database?
 export const ADD_ITEM = gql`
     mutation addItem($name: String!, $description: String!, $image: String!, $price: Float!) {
         addItem(name: $name, description: $description, image: $image, price: $price) {
+
             _id
             name
             description
@@ -30,6 +33,22 @@ export const ADD_ITEM = gql`
         }
     }
 `;   
-  
+
+export const UPDATE_WISHLIST = gql`
+    mutation updateWishList($id: ID!, $name: String!, description: String!, image: String!, price: Float!) {
+        updateWishList(id: $id, name: $name, description: $description, image: $image, price: $price) {
+            _id
+            name
+            email
+            wishlist {
+                _id
+                name
+                description
+                image
+                price
+            }
+        }
+    }
+`;  
 
 
