@@ -32,17 +32,17 @@ const resolvers = {
 
       return { token, user };
     },
-    login: async (parent, { email, password }) => {
-      const user = await User.findOne({ email });
+    login: async (parent, { input }) => {
+      const user = await User.findOne({ email: input.email });
 
       if (!user) {
-        throw new AuthenticationError("Incorrect credentials");
+        throw new AuthenticationError("Incorrect user");
       }
 
-      const correctPw = await user.isCorrectPassword(password);
+      const correctPw = await user.isCorrectPassword(input.password);
 
       if (!correctPw) {
-        throw new AuthenticationError("Incorrect credentials");
+        throw new AuthenticationError("Incorrect password");
       }
 
       const token = signToken(user);
@@ -53,9 +53,16 @@ const resolvers = {
       const item = await Item.create(args);
       return item;
     },
-    updateWishlist: async (parent, { wishlist }) => {
-      const wishList = await User.findOne({ wishlist }).insert(Item);
-      return wishList;
+    updateWishlist: async (parent, { id }, context) => {
+      if (context.user) {
+        const wishList = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $push: { wishlist: id } },
+          { new: true }
+        ).populate("wishlist");
+        return wishList;
+      }
+      throw new AuthenticationError("Have to be logged in.");
     },
   },
 };
