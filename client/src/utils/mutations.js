@@ -9,7 +9,6 @@ export const LOGIN = gql`
             }
         }
     }`
-  
 export const ADD_USER = gql`
     mutation addUser($name: String!, $email: String!, $password: String!) {
         addUser(name: $name, email, password: $password) {
@@ -20,15 +19,7 @@ export const ADD_USER = gql`
         }
     }
 `;
-export const ADD_ITEM = gql`
-    mutation addItem($name: String!, $description: String!, $image: String!, $price: Float!) {
-        addItem(name: $name, description: $description, image: $image, price: $price) {
-            _id
-            name
-            description
-            image
-            price
-        }
-    }
-`;
+
+  
+
 
