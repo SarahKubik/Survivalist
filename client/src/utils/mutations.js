@@ -19,7 +19,17 @@ export const ADD_USER = gql`
         }
     }
 `;
-
+export const ADD_ITEM = gql`
+    mutation addItem($name: String!, $description: String!, $image: String!, $price: Float!) {
+        addItem(name: $name, description: $description, image: $image, price: $price) {
+            _id
+            name
+            description
+            image
+            price
+        }
+    }
+`;   
   
 
 
