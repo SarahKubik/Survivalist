@@ -1,35 +1,35 @@
 const contentData = [
   {
-    title: "Hammer",
-    image: ".assets/hammer.svg",
+    title: "Tools",
+    image: ".assets/hammer.jpg",
     link: "https://en.wikipedia.org/wiki/Hammer",
     description:
-      "Hammers are superful useful items! You can use it to nail items or even as a defensive weapon. Click the link above to learn more about hammers.",
+      "Tools such as hammers, knives, and axes can be helpful to establishing a shelter as well as for defense purposes. See the link above to learn more about tools and how they can be an asset.",
     price: 5.99
 
   },
   {
-    title: "Water",
-    image: ".assets/boxed water.svg",
+    title: "Water & Filtration",
+    image: ".assets/boxed water.jpg",
     link: "https://en.wikipedia.org/wiki/Water",
     description:
-      "Water is important to staying alive. Having safe drinking water can be used to keep you hydrated, used to cook food, and cleaning items. Click the link above to learn more about water",
+      "Water, more importantly, properly filtrated water is an essential component to survivalism. To learn more, click the link above.",
     price: 10.00
   },
   {
     title: "Shelter",
-    image: ".assets/shelter.svg",
+    image: ".assets/shelter.jpg",
     link: "https://en.wikipedia.org/wiki/Shelter",
     description:
-      "Shelter is crucial to survivalism. You need proper shelter in order to keep yourself same from unknowns. Click the link above to learn more about shelter.",
+      "In order to survive in all weather conditions, you will need to have more than a basic understanding of how to assemble a shelter. Click the link above to learn more about various types of shelters and how they can help you survive the dangerous unknown.",
     price: 100.00
   },
   {
-    title: "Rope",
-    image: '.assets/shelter.svg',
+    title: "Supplies",
+    image: '.assets/shelter.jpg',
     link: "https://en.wikipedia.org/wiki/Rope",
     description:
-      "Rope can be a good item to have to help store items and build. Click the link above to learn more about rope.",
+      "There are various supplies from rope to compasses to dry packs that we recommend looking into before starting your Survivalist journey. See link above to learn more.",
      price: 10.00
   }
 ];
