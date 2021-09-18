@@ -1,6 +1,6 @@
 {
     "domain": "dev-yg3kgbw8.us.auth0.com",
     "clientId": "fDcMXH5ZAZSiWPnxMkI0MtswH0hP9kvO",
-    "audience": "graphql"
+    "audience": "YOUR_API_IDENTIFIER"
   }
 
