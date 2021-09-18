@@ -4,7 +4,7 @@
 
   <p align="center"
     <br />
-    <a href="">View Site</a>
+    <a href="https://survivalist-bc.herokuapp.com/">View Site</a>
     ·
     <a href="">View Demo</a>
   </p>
@@ -42,8 +42,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Homepage Site][product-screenshot]](https://example.com)
-
 Are you worried about the end of the world? A civil war? Just tired of your neighbors? Do you believe in being prepared for every event? Do you believe in "Survivalism"? Well our app was created just for you! Our app allows the user to search for survivalist products at low prices. It's a one stop shop for all your survivalist needs. The app focuses on the following products: Food, Water, Tools, and Shelter. 
 
 
@@ -51,63 +49,16 @@ Are you worried about the end of the world? A civil war? Just tired of your neig
 ### Built With
 
 
-* [React](https://reactjs.org/docs/getting-started.html)
-* [Node](https://nodejs.org/en/docs/)
-* [Example](https://example.com)
+* [ReactJs](https://reactjs.org/docs/getting-started.html)
+* [React-Bootstrap](https://react-bootstrap.github.io/)
+* [ApolloServerExpress](https://www.npmjs.com/package/apollo-server-express)
+* [Graphql](https://graphql.org/)
+* [NodeJs](https://nodejs.org/en/docs/)
+* [mongoDB](https://docs.mongodb.com/)
+* [mongoDB](https://docs.mongodb.com/)
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1.
-  ```
-2. 
-   ```
-
-   ```
-3. 
-   ```
-4. 
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-1. 
-2. 
-3. 
-4. 
-5. 
 
 
 <!-- CONTACT -->
@@ -122,10 +73,3 @@ Contributions are what make the open source community such an amazing place to l
 
 
 
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* 
-* 
-* 
-* 
