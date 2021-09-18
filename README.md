@@ -35,7 +35,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[!Homepage Site](https://survivalist-bc.herokuapp.com/)
+![!Homepage Site](https://survivalist-bc.herokuapp.com/)
 
 Are you worried about the end of the world? A civil war? Just tired of your neighbors? Do you believe in being prepared for every event? Do you believe in "Survivalism"? Well our app was created just for you! Our app allows the user to search for survivalist products at low prices. It's a one stop shop for all your survivalist needs. The app focuses on the following products: Food, Water, Tools, and Shelter.
 
