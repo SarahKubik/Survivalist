@@ -57,7 +57,7 @@ The app was launched in it's infancy stage with a login and landing page that li
 
 ## Roadmap
 
-The future plan is to deliver a fully developed Ecommerce lifeystyle application that offers a user friendly marketplace of products, services and resources catering to those who practice and or those whom are interested in living a "less is more" sustainable life.
+A full end to end solution, an Ecommerce lifeystyle application that offers a user friendly marketplace of products, services and resources catering to those who practice and or are interested in living a "less is more" sustainable life.
 
 ## Developers
 
