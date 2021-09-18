@@ -1,5 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch,Link } from 'react-router-dom';
+import { Nav, Navbar } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -11,7 +14,7 @@ import { setContext } from '@apollo/client/link/context';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Nav from './components/Nav';
+// import Nav from './components/Nav';
 
 
 const httpLink = createHttpLink({
@@ -39,14 +42,34 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-        
-            <Nav />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/signup" component={Signup} />           
-            </Switch>
-      
+        <Navbar
+            bg="dark"
+            variant="dark"
+            sticky="top"
+            expand="sm"
+            collapseOnSelect
+          >
+            <Navbar.Toggle />
+            <Navbar.Collapse>
+              <Nav>
+                <Nav.Link as={Link} to="/">
+                  Home
+                </Nav.Link>
+                <Nav.Link as={Link} to="/login">
+                  Login
+                </Nav.Link>
+                <Nav.Link as={Link} to="/signup">
+                  Sign Up
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/signup" component={Signup} />
+          </Switch>
+
         </div>
       </Router>
     </ApolloProvider>
