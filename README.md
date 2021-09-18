@@ -50,17 +50,14 @@ Are you worried about the end of the world? A civil war? Just tired of your neig
 
 ### Installation
 
-Using the Apollo Server, the backend was was developed and intergrated with the front end client. Graphlql was setup as the database while Concurrently acted as the middleware connecting the back and frontend seamlesslly.
-
-Routes, mutations, and typesdefs were built to speak to the front end for the application to be fully interactive. Bootstrap and Styled Components were used to style the front end.
-
+Using the Apollo Server, the backend was developed and connected to the front end client. Graphlql was setup as the database while Concurrently acted as the middleware running the backend server and frontend client simultaneously using schemas made up of mutuations, typedefs, and modules. Bootstrap and Style Components were used to style the front end.
 ## Usage
 
 The app was launched in it's infancy stage with a login and landing page that links to Wikipedia articles discussing broad topics of survival tools and resources.
 
 ## Roadmap
 
-The future plan is to deliver a fully developed Ecommerce lifeystyle application that offers a userfriendly marketplace of products, services and resources catering to those who practice and or those whom are interested living a "less is more" sustainable way of life.
+The future plan is to deliver a fully developed Ecommerce lifeystyle application that offers a user friendly marketplace of products, services and resources catering to those who practice and or those whom are interested in living a "less is more" sustainable life.
 
 ## Developers
 
