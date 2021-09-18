@@ -4,13 +4,11 @@
 
   <p align="center"
     <br />
-    <a href="">View Site</a>
+    <a href="https://survivalist-bc.herokuapp.com">Site</a>
     ·
-    <a href="">View Demo</a>
+    <a href="[![Survivalist](https://res.cloudinary.com/marcomontalbano/image/upload/v1631991823/video_to_markdown/images/google-drive--15U8zz4Paub0FqQyxmmXa9WECWTiaPG3a-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/15U8zz4Paub0FqQyxmmXa9WECWTiaPG3a/view "Survivalist")">View Demo</a>
   </p>
 </p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -25,28 +23,21 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#About the project">About the project</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#developers">Developers</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Homepage Site][product-screenshot]](https://example.com)
+![Homepage Site](https://survivalist-bc.herokuapp.com/)
 
-Are you worried about the end of the world? A civil war? Just tired of your neighbors? Do you believe in being prepared for every event? Do you believe in "Survivalism"? Well our app was created just for you! Our app allows the user to search for survivalist products at low prices. It's a one stop shop for all your survivalist needs. The app focuses on the following products: Food, Water, Tools, and Shelter. 
-
-
+Are you worried about the end of the world? A civil war? Just tired of your neighbors? Do you believe in being prepared for every event? Do you believe in "Survivalism"? Well our app was created just for you! Our app allows the user to search for survivalist products at low prices. It's a one stop shop for all your survivalist needs. The app focuses on the following products: Food, Water, Tools, and Shelter.
 
 ### Built With
 
@@ -54,78 +45,36 @@ Are you worried about the end of the world? A civil war? Just tired of your neig
 * [React](https://reactjs.org/docs/getting-started.html)
 * [Node](https://nodejs.org/en/docs/)
 * [Example](https://example.com)
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* [MongoDB](https://www.mongodb.com)
+* [Apollo and Graphql](https://www.apollographql.com/)
 
 ### Installation
 
-1.
-  ```
-2. 
-   ```
+Using the Apollo Server, the backend was was developed and intergrated with the front end client. Graphlql was setup as the database while Concurrently acted as the middleware connecting the back and frontend seamlesslly.
 
-   ```
-3. 
-   ```
-4. 
-
-
+Routes, mutations, and typesdefs were built to speak to the front end for the application to be fully interactive. Bootstrap and Styled Components were used to style the front end.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-
+The app was launched in it's infancy stage with a login and landing page that links to Wikipedia articles discussing broad topics of survival tools and resources.
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-1. 
-2. 
-3. 
-4. 
-5. 
-
+The full solution is an Ecommerce lifeystyle application that offfers a userfriendly marketplace of products, services and resources catering to those who practice and or those whom are interested living a "less is more" sustainable way of life.
 
 <!-- CONTACT -->
 ## Developers
 
 * Caden Witbeck - [Github](https://github.com/CadenWit/)
-* Drew Selden  - [Github](https://github.com/selden-CBC2021
+* Drew Selden  - [Github](https://github.com/selden-CBC2021)
 * Adam Andrzejczak - [Github](https://github.com/andadam24)
 * Lauren Marcinek - [Github](https://github.com/lc-mar)
 * Cody Schenk - [Github](https://github.com/Codyschenk)
 * Sarah Kubik - [Github](https://github.com/SarahKubik/)
 
 
+## Links
 
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* 
-* 
-* 
-* 
+* [Github Repo](https://github.com/SarahKubik/survivalist.git)
