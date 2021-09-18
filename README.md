@@ -4,7 +4,7 @@
 
   <p align="center"
     <br />
-    .
+       ·
     <a href="https://survivalist-bc.herokuapp.com/">View Site</a>
     ·
   </p>
