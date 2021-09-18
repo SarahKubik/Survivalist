@@ -19,7 +19,7 @@
     "develop": "concurrently \"cd server && npm run watch\" \"cd test/my-app && npm start\"",
     "install": "cd server && npm i && cd ../test/my-app && npm i",
     "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
+    "build": "cd test/my-app && npm run build"
   },
   "repository": {
     "type": "git",
