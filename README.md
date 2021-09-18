@@ -53,7 +53,7 @@ Are you worried about the end of the world? A civil war? Just tired of your neig
 Using the Apollo Server, the backend was developed and connected to the front end client. Graphlql was setup as the database while Concurrently acted as the middleware running the backend server and frontend client simultaneously using schemas made up of mutuations, typedefs, and modules. Bootstrap and Style Components were used to style the front end.
 ## Usage
 
-The app was launched in it's infancy stage with a login and landing page that links to Wikipedia articles discussing broad topics of survival tools and resources.
+The app was launched in its infancy stage with a login and landing page that links to Wikipedia articles discussing broad topics of survival tools and resources.
 
 ## Roadmap
 
